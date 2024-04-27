@@ -44,11 +44,48 @@
         </div>
         <div class="navbar-right">
             <div class="online">
-                <img src="./images/user-1.png" alt="user-img" class="nav-profile-img" />
+                <img src="./images/user-1.png" alt="user-img" class="nav-profile-img" onclick="toggleMenu()" />
             </div>
 
         </div>
-
+        <!-- ---------------profile drop-down-menu--------- -->
+        <div class="profile-menu-wrap" id="profile-menu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-1.png" />
+                    <div>
+                        <h3>Rayan Wlton</h3>
+                        <a href="#">See Your profile</a>
+                    </div>
+                </div>
+                <hr />
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png" />
+                    <p>Give feedback</p>
+                    <span></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png" />
+                    <p>Settings & Privacy</p>
+                    <span></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png" />
+                    <p>Help & Support</p>
+                    <span></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png" />
+                    <p>Display & Accessibility</p>
+                    <span></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png" />
+                    <p>Logout</p>
+                    <span></span>
+                </a>
+            </div>
+        </div>
     </nav>
 
     <div class="container">
@@ -370,6 +407,13 @@
             </div>
         </div>
     </div>
+    <script>
+        let profilemenu = document.getElementById("profile-menu");
+
+        function toggleMenu() {
+            profilemenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 
 </html>
