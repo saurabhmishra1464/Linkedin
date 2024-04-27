@@ -134,6 +134,8 @@ a {
 .left-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top: 73px;
 }
 
 .sidebr-profile-box {
@@ -259,6 +261,8 @@ a {
 .right-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top: 73px;
 }
 
 
@@ -488,4 +492,56 @@ a {
 .post p {
     font-size: 14px;
     margin-bottom: 15px;
+}
+
+.post-status {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+}
+
+.post-status div {
+    display: flex;
+    align-items: center;
+}
+
+.post-status img {
+    width: 15px;
+    margin-right: -5px;
+}
+
+.liked-users {
+    margin-left: 10px;
+}
+
+.post-activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.post-activity div {
+    display: flex;
+}
+
+.post-activity-user-icon {
+    width: 22px;
+    border-radius: 50%;
+}
+
+.post-activity-arrow-icon {
+    width: 12px;
+    margin-left: 5px;
+}
+
+.post-activity-link img {
+    width: 18px;
+    margin-right: 8px;
 }
