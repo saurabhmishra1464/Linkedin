@@ -108,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="sidebar-activity">
+            <div class="sidebar-activity" id="sidebarActivity">
                 <h3>RECENT</h3>
                 <a href="#"><img src="./images/recent.png" alt="recent-img" />Web Development</a>
                 <a href="#"><img src="./images/recent.png" alt="recent-img" />Web Development</a>
@@ -134,7 +134,7 @@
                 </div>
 
             </div>
-
+            <p id="showMoreLink" onclick="toggleActivity()">Show More <b>+</b></p>
         </div>
         <div class="main-content">
 
@@ -412,6 +412,23 @@
 
         function toggleMenu() {
             profilemenu.classList.toggle("open-menu");
+        }
+    </script>
+
+    <script>
+        let sideActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink");
+
+        function toggleActivity() {
+            sideActivity.classList.toggle("open-activity");
+
+            if (sideActivity.classList.contains("open-activity")) {
+                moreLink.innerHTML = "Show less <b>-</b>";
+            }
+
+            else {
+                moreLink.innerHTML = "Show more <b>+</b>";
+            }
         }
     </script>
 </body>
